@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { FC, useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, easeIn, easeOut } from 'framer-motion';
 
 // Definisikan tautan-tautan navigasi Anda
 const navLinks = [
@@ -15,36 +15,41 @@ const navLinks = [
   { name: 'Portfolio', href: '#portfolio' },
 ];
 
-// Variants untuk container dan item
-const containerVariants = {
-  hidden: { opacity: 0 },
+const itemVariants = {
+  hidden: { opacity: 0, y: -20 },
   show: {
     opacity: 1,
+    y: 0,
     transition: {
-      staggerChildren: 0.15, // delay antar anak
+      type: "spring" as const, 
+      stiffness: 200,
+      damping: 20,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -20,
+    transition: {
+      duration: 0.2,
+      ease: easeIn,
     },
   },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: -20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: 'easeOut' } },
-  exit: { opacity: 0, y: -20, transition: { duration: 0.2, ease: 'easeIn' } },
-};
 
 const Header: FC = () => {
   const pathname = usePathname();
-  const [activeSection, setActiveSection] = useState('#home');
+  const [activeSection, setActiveSection] = useState('#herosection'); 
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navLinks.map(link =>
+      const sections = navLinks.map((link) =>
         document.getElementById(link.href.substring(1))
       );
       const scrollPosition = window.scrollY + 100;
 
-      sections.forEach(section => {
+      sections.forEach((section) => {
         if (
           section &&
           scrollPosition >= section.offsetTop &&
@@ -100,10 +105,10 @@ const Header: FC = () => {
         {isOpen && (
           <motion.div
             key="mobileMenu"
-            variants={containerVariants}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -30 }}
+            transition={{ type: "spring", stiffness: 150, damping: 18 }}
             className="md:hidden bg-gray-800 px-6 pb-4 space-y-4"
           >
             {navLinks.map((link) => {
