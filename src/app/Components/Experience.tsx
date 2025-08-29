@@ -18,7 +18,7 @@ export default function Experience() {
     <section className="relative mx-auto max-w-5xl min-h-screen py-18 px-6 md:px-21">
       {/* garis tengah penuh */}
       <div className="hidden md:block pointer-events-none absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-gray-400" />
-      <h2 className="md:hidden text-4xl font-bold text-center text-gray-800 uppercase tracking-widest mb-2">
+      <h2 className="text-4xl font-bold text-center text-gray-800 uppercase tracking-widest mb-2">
         Job Experience
       </h2>
       

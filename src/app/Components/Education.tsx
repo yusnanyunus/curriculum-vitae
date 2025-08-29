@@ -71,7 +71,7 @@ export default function Education() {
         ))}
       </div>
     </section>
-        </div>
+</div>
     );
 };
 

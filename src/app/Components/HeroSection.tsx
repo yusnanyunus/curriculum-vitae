@@ -36,19 +36,19 @@ style={{ objectFit: 'cover' }}
         {/* Bagian Info */}
         <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center">
           <div className="text-center md:text-left">
-            <h1 className="text-3xl font-bold text-gray-800">Yusnan Yunus</h1>
-            <p className="text-sm uppercase tracking-wide text-gray-500 mb-2">
+            <h1 className="text-3x1 uppercase font-bold text-gray-800">Yusnan Yunus</h1>
+            <p className="text-sm uppercase tracking-wide text-gray-400 mb-2">
               Systems Analyst
             </p>
           </div>
           
           <div className="space-y-4 text-center md:text-left">
             <div className="text-gray-900">
-              <h2 className="text-sm text-gray-600">Email:</h2>
+              <h2 className="text-sm uppercase text-gray-600">Email:</h2>
               <p>yusnanyunus24@gmail.com</p>
             </div>
             <div className="text-gray-900">
-              <h2 className="text-sm text-gray-600">Date of Birth:</h2>
+              <h2 className="text-sm uppercase text-gray-600">Date of Birth:</h2>
               <p>February 24th, 1991</p>
             </div>
           </div>

@@ -39,7 +39,7 @@ const Skill: FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="bg-blue-600 text-white p-5 rounded-full shadow-lg transition duration-300 hover:bg-blue-700">
+            <div className="bg-black text-white p-5 rounded-full shadow-lg transition duration-300 hover:bg-[#7e8294]">
               <Keyboard className="h-9 w-9" />
             </div>
             <p className="mt-4 text-lg font-semibold text-gray-800">Data Management</p>
@@ -59,7 +59,7 @@ const Skill: FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <div className="bg-green-600 text-white p-5 rounded-full shadow-lg transition duration-300 hover:bg-green-700">
+            <div className="bg-black text-white p-5 rounded-full shadow-lg transition duration-300 hover:bg-[#7e8294]">
               <FileText className="h-9 w-9" />
             </div>
             <p className="mt-4 text-lg font-semibold text-gray-800">Technical Writer</p>
@@ -79,7 +79,7 @@ const Skill: FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="bg-purple-600 text-white p-5 rounded-full shadow-lg transition duration-300 hover:bg-purple-700">
+            <div className="bg-black text-white p-5 rounded-full shadow-lg transition duration-300 hover:bg-[#7e8294]">
               <Code className="h-9 w-9" />
             </div>
             <p className="mt-4 text-lg font-semibold text-gray-800">Fullstack Development</p>
