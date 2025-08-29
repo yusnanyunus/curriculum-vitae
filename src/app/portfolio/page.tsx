@@ -98,7 +98,7 @@ export default function Portfolio() {
             className={`rounded-2xl px-5 py-2 ${
               selectedCategory === cat
                 ? "bg-black text-white"
-                : "bg-white text-black border"
+                : "bg-black text-black border"
             } transition-all`}
           >
             {cat}
