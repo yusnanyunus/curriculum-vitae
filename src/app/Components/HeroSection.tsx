@@ -8,12 +8,12 @@ return (
 {/* Background image */}
 <div className="absolute inset-0">
 <Image
-src="/images/background.avif"
-alt="Building background"
+src="/images/my-background-2.png"
+alt="Personal"
 fill
 style={{ objectFit: 'cover' }}
 />
-<div className="absolute inset-0 bg-black opacity-60"></div>
+<div className="absolute inset-0 bg-black opacity-40"></div>
 </div>
 
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex items-center justify-center min-h-screen">
@@ -26,7 +26,7 @@ style={{ objectFit: 'cover' }}
         {/* Bagian Foto */}
         <div className="relative w-full md:w-1/2 min-h-[300px] md:min-h-0">
           <Image
-            src="/images/my-photo.png"
+            src="/images/myphotoanim.png"
             alt="Yusnan Yunus"
             fill
             style={{ objectFit: 'contain' }}
