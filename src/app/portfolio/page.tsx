@@ -16,8 +16,22 @@ type Project = {
 };
 
 const projects: Project[] = [
-  {
+    {
     id: 1,
+    title: "Optimalisasi Produksi Harian Toko Roti",
+    category: "Data Analytic",
+    description: "Menggunakan data penjualan untuk memahami pola dan membuat keputusan produksi yang lebih baik",
+    images: [
+    "/porto/data/toko_roti/1.png",
+    "/porto/data/toko_roti/2.png",
+    "/porto/data/toko_roti/3.png",
+    "/porto/data/toko_roti/4.png",
+    "/porto/data/toko_roti/5.png",
+    "/porto/data/toko_roti/6.png",
+    ],
+  },
+  {
+    id: 2,
     title: "Mail Managements",
     category: "Web Application",
     description: "Aplikasi ini digunakan untuk mengelola dokumen atau surat yang dilengkapi dengan generate nomor surat dan juga fasilitas upload file secara fisik",
@@ -26,24 +40,24 @@ const projects: Project[] = [
     "/porto/web/mail_management/dashboardpage.png", 
     "/porto/web/mail_management/Formpage.png", 
     "/porto/web/mail_management/Reportpage.png"
-  ],
+    ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Operation Building Management System",
     category: "Web Application",
     description: "Aplikasi ini digunakan untuk mengelola kebutuhan operasional gedung dan salah satu pusat perbelanjaan di Makassar yang terdiri dari tenant relation, fit out, engineering, marketing communication, tenant store dan juga tenant income serta penunjang kebutuhan operasional gedung.",
     images: ["/porto/web/obms/LoginPage.png"],
   },
   {
-    id: 3,
+    id: 4,
     title: "IT Asset Management",
     category: "Web Application",
     description: "Aplikasi ini digunakan untuk pendataan asset berupa perangkat IT baik itu software maupun hardware",
     images: ["/porto/web/it_asset/FormPage.png"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Laundry System",
     category: "Web Application",
     description: "Aplikasi ini digunakan untuk mengelola usaha yang bergerak di bidang jasa cuci dan setrika, sedangkan menu terdiri dari pembuatan kwitansi dan pencetakannya beserta pengelolaannya seperti penambahan dan pengurangan barang, serta pengeluaran usaha dan dilengkapi dengan pengelolaan pengguna serta laporan pengeluaran dan pendapatan bisnis.",
@@ -58,14 +72,14 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Dealer Management System (Aftersales) - Guidance",
     category: "Technical Document",
     description: "Website ini merupakan portal dokumentasi untuk aplkasi pengelolaan salah satu bengkel mobil terbesar yang ada di wilayah indonesia timur, dirancang untuk memberikan panduan lengkap dan terperinci. Di sini, pengguna dapat menemukan berbagai informasi, panduan penggunaan, serta referensi yang memudahkan dalam memahami dan mengoptimalkan fitur-fitur aplikasi.",
     images: ["/porto/doc/dms_af/Reception.png"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Asset Management System - Guidance",
     category: "Technical Document",
     description: "Website ini merupakan portal dokumentasi untuk aplkasi pengolahan asset di salah satu perusahaan swasta di makassar yang dirancang untuk memberikan panduan lengkap dan terperinci. Di sini, pengguna dapat menemukan berbagai informasi, panduan penggunaan, serta referensi yang memudahkan dalam memahami dan mengoptimalkan fitur-fitur aplikasi.",
