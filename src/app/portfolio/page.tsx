@@ -188,7 +188,7 @@ export default function Portfolio() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-sm p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-70 backdrop-blur-sm p-4"
             onClick={closeModal}
           >
             <motion.div
@@ -207,21 +207,21 @@ export default function Portfolio() {
               <h2 className="text-2xl font-bold mb-4">{selectedProject.title}</h2>
               
               {/* Image Container with Navigation Buttons */}
-              <div className="relative w-full h-80 mb-4 rounded-md overflow-hidden">
+              <div className="relative w-full mb-4 rounded-md overflow-hidden aspect-video">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentImageIndex} // Key untuk memicu animasi saat index berubah
                     initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    animate={{ opacity: 10, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.2 }}
                     className="absolute inset-0"
                   >
                     <Image
                       src={selectedProject.images[currentImageIndex]}
                       alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
                       layout="fill"
-                      objectFit="cover"
+                      objectFit="contain"
                       className="rounded-md"
                     />
                   </motion.div>
