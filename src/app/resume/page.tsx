@@ -79,14 +79,21 @@ const resumeItems: ResumeItem[] = [
     category: "Education",
     date: "2009 - 2014",
     degree: "Bachelor Degree, Information Systems",
-    school: "Universitas Dipa Makassar",
+    school: "STMIK DIPANEGARA Makassar",
   },
   {
     id: 9,
     category: "Education",
     date: "2006 - 2009",
-    degree: "High School Diploma",
-    school: "LPP UMI Makassar",
+    degree: "Senior High School",
+    school: "SMA LPP UMI Makassar",
+  },
+  {
+    id: 10,
+    category: "Education",
+    date: "2003 - 2006",
+    degree: "Junior High School",
+    school: "SMP ISLAM ATHIRAH Makassar",
   },
 ];
 
@@ -166,7 +173,7 @@ export default function Resume() {
                   </div>
                   <div className="text-left">
                     <h3 className="text-xl font-bold uppercase">{item.title}</h3>
-                    <p className="text-gray-700">{item.company}</p>
+                    <p className="text-gray-700 uppercase">{item.company}</p>
                   </div>
                 </div>
               )}
@@ -179,7 +186,7 @@ export default function Resume() {
                   </div>
                   <div className="text-left">
                     <h3 className="text-xl font-bold uppercase">{item.degree}</h3>
-                    <p className="text-gray-700">{item.school}</p>
+                    <p className="text-gray-700 uppercase">{item.school}</p>
                   </div>
                 </div>
               )}
