@@ -47,7 +47,13 @@ const projects: Project[] = [
     title: "Operation Building Management System",
     category: "Web Application",
     description: "Aplikasi ini digunakan untuk mengelola kebutuhan operasional gedung dan salah satu pusat perbelanjaan di Makassar yang terdiri dari tenant relation, fit out, engineering, marketing communication, tenant store dan juga tenant income serta penunjang kebutuhan operasional gedung.",
-    images: ["/porto/web/obms/LoginPage.png"],
+    images: [
+      "/porto/web/obms/LoginPage.png",
+      "/porto/web/obms/DashboardPage.png",
+      "/porto/web/obms/RegisterPage.png",
+      "/porto/web/obms/ListPage.png",
+      "/porto/web/obms/ReportPage.png",
+    ],
   },
   {
     id: 4,
@@ -85,6 +91,21 @@ const projects: Project[] = [
     description: "Website ini merupakan portal dokumentasi untuk aplkasi pengolahan asset di salah satu perusahaan swasta di makassar yang dirancang untuk memberikan panduan lengkap dan terperinci. Di sini, pengguna dapat menemukan berbagai informasi, panduan penggunaan, serta referensi yang memudahkan dalam memahami dan mengoptimalkan fitur-fitur aplikasi.",
     images: ["/porto/doc/asset_oto/Mutation.png"],
   },
+
+  {
+    id: 8,
+    title: "Website Hut Kalla Group 64th",
+    category: "Landing Page",
+    description: "Portal Website resmi menampilkan dokumentasi, informasi dan event terkait rangkaian ulang tahun Kalla Group ke 64 tahun",
+    images: [
+      "/porto/web/websiteHutKalla64/beranda.png",
+      "/porto/web/websiteHutKalla64/Picture1.png",
+      "/porto/web/websiteHutKalla64/Picture2.png",
+      "/porto/web/websiteHutKalla64/Picture4.png",
+      "/porto/web/websiteHutKalla64/Picture3.png",
+    ],
+  },
+
 ];
 
 export default function Portfolio() {
@@ -141,7 +162,7 @@ export default function Portfolio() {
 
       {/* Filter Buttons */}
       <div className="flex justify-center gap-3 mb-12 flex-wrap">
-        {["All", "Data Analytic", "Web Application", "Technical Document"].map((cat) => (
+        {["All", "Data Analytic", "Web Application", "Landing Page", "Technical Document"].map((cat) => (
           <Button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
