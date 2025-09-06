@@ -26,7 +26,7 @@ style={{ objectFit: 'cover' }}
         {/* Bagian Foto */}
         <div className="relative w-full md:w-1/2 min-h-[300px] md:min-h-0">
           <Image
-            src="/images/myphotoanim.png"
+            src="/images/my-photonew.png"
             alt="Yusnan Yunus"
             fill
             style={{ objectFit: 'contain' }}
