@@ -31,7 +31,7 @@ const resumeItems: ResumeItem[] = [
     category: "Skill",
     nameskill: "Fullstack Development",
     cores: [
-      { core: "Web Development", detail: "Laravel(Backend), Next JS(Frontend)" },
+      { core: "Web Development", detail: "Laravel & Next JS" },
       { core: "Database Management", detail: "MySQL data structure and relationships" },
     ],
   },
