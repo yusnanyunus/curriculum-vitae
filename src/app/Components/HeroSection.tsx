@@ -2,7 +2,8 @@
 
 import { FC } from 'react';
 import Image from 'next/image';
-import { FaYoutube, FaLinkedin, FaTiktok, FaInstagram } from 'react-icons/fa';
+import { FaYoutube, FaLinkedin, FaTiktok, FaInstagram, FaFacebook, FaThreads } from 'react-icons/fa';
+import { SiThreads } from "react-icons/si";
 import Spline from '@splinetool/react-spline'; // Impor komponen Spline
 
 const HeroSection: FC = () => {
@@ -43,7 +44,7 @@ style={{ objectFit: 'cover' }}
      <div className="text-center md:text-left">
       <h1 className="text-3x1 uppercase font-bold text-gray-800">Yusnan Yunus</h1>
       <p className="text-sm uppercase tracking-wide text-gray-400 mb-2">
-       Systems Analyst
+       Digital & Tech Enthusiast
       </p>
      </div>
     
@@ -68,11 +69,17 @@ style={{ objectFit: 'cover' }}
     <a href="https://youtube.com/@yusnanyunus" target="_blank" rel="noopener noreferrer" aria-label="Youtube" className="hover:opacity-75">
      <FaYoutube size={24} />
     </a>
-    <a href="https://tiktok.com/@yusnan_yunus" target="_blank" rel="noopener noreferrer" aria-label="Tiktok" className="hover:opacity-75">
+    <a href="https://tiktok.com/@sayayusnanyunus" target="_blank" rel="noopener noreferrer" aria-label="Tiktok" className="hover:opacity-75">
      <FaTiktok size={24} />
     </a>
-    <a href="https://instagram.com/yusnan_yunus" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:opacity-75">
+    <a href="https://instagram.com/sayayusnanyunus" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:opacity-75">
      <FaInstagram size={24} />
+    </a>
+    <a href="https://facebook.com/sayayusnanyunus" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:opacity-75">
+     <FaFacebook size={24} />
+    </a>
+    <a href="https://www.threads.com/@yusnan_yunus" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="hover:opacity-75">
+     <SiThreads size={24} />
     </a>
    </div>
   </div>

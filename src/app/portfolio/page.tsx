@@ -18,8 +18,8 @@ type Project = {
 const projects: Project[] = [
     {
     id: 1,
-    title: "Optimalisasi Produksi Harian Toko Roti",
-    category: "Data Analytic",
+    title: "Optimalisasi Produksi Harian Toko Roti (Dummy Project)",
+    category: "Data Entry / Data Analytic",
     description: "Menggunakan data penjualan untuk memahami pola dan membuat keputusan produksi yang lebih baik",
     images: [
     "/porto/data/toko_roti/1.png",
@@ -79,14 +79,14 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Dealer Management System (Aftersales) - Guidance",
+    title: "Dealer Management System (Aftersales) - Guidance - Web Based",
     category: "Technical Document",
     description: "Website ini merupakan portal dokumentasi untuk aplkasi pengelolaan salah satu bengkel mobil terbesar yang ada di wilayah indonesia timur, dirancang untuk memberikan panduan lengkap dan terperinci. Di sini, pengguna dapat menemukan berbagai informasi, panduan penggunaan, serta referensi yang memudahkan dalam memahami dan mengoptimalkan fitur-fitur aplikasi.",
     images: ["/porto/doc/dms_af/Reception.png"],
   },
   {
     id: 7,
-    title: "Asset Management System - Guidance",
+    title: "Asset Management System - Guidance - Web Based",
     category: "Technical Document",
     description: "Website ini merupakan portal dokumentasi untuk aplkasi pengolahan asset di salah satu perusahaan swasta di makassar yang dirancang untuk memberikan panduan lengkap dan terperinci. Di sini, pengguna dapat menemukan berbagai informasi, panduan penggunaan, serta referensi yang memudahkan dalam memahami dan mengoptimalkan fitur-fitur aplikasi.",
     images: ["/porto/doc/asset_oto/Mutation.png"],
@@ -105,6 +105,107 @@ const projects: Project[] = [
       "/porto/web/websiteHutKalla64/Picture3.png",
     ],
   },
+
+  {
+    id: 10,
+    title: "BMW Motorrad - Guidance Diagnostic",
+    category: "Technical Document",
+    description: "Pembuatan dokumen teknis mengenai prosedur scanning dan deteksi kerusakan sistem injeksi serta elektronik pada motor BMW. Mencakup panduan penggunaan software diagnostik serta pembacaan kode error",
+    images: [
+      "/porto/doc/bmw_mtr/1.png",
+      "/porto/doc/bmw_mtr/2.png",
+      "/porto/doc/bmw_mtr/3.png",
+      "/porto/doc/bmw_mtr/4.png",
+      "/porto/doc/bmw_mtr/5.png",
+      "/porto/doc/bmw_mtr/6.png"
+    ],
+  },
+
+    {
+    id: 11,
+    title: "Dealer Managements System (Sales) - Guidance",
+    category: "Technical Document",
+    description: "Menyusun dokumentasi teknis dan panduan pengguna (User Manual) untuk modul Sales pada Dealer Management System (DMS). Proyek ini mencakup standarisasi alur kerja dari prospecting, manajemen stok unit kendaraan, hingga proses SPK (Surat Pemesanan Kendaraan). Berhasil menyederhanakan prosedur input data penjualan untuk meningkatkan akurasi laporan operasional harian",
+    images: [
+      "/porto/doc/dms_sls/1.png",
+      "/porto/doc/dms_sls/2.png",
+      "/porto/doc/dms_sls/3.png",
+      "/porto/doc/dms_sls/4.png",
+      "/porto/doc/dms_sls/5.png"
+    ],
+  },
+
+  {
+    id: 12,
+    title: "Fitness (GYM Centre) - Guidance",
+    category: "Technical Document",
+    description: "Pembuatan panduan komprehensif aplikasi pengelola GYM, mencakup modul administrasi keanggotaan (Member Management) dan modul billing sistem. Menjelaskan langkah-langkah teknis pembuatan member, aktivasi paket, hingga generate invoice digital sebagai bagian dari transformasi digital operasional fitness center",
+    images: [
+      "/porto/doc/fitness/1.png",
+      "/porto/doc/fitness/2.png",
+      "/porto/doc/fitness/3.png",
+      "/porto/doc/fitness/4.png",
+      "/porto/doc/fitness/5.png",
+      "/porto/doc/fitness/6.png"
+    ],
+  },
+
+  {
+    id: 13,
+    title: "End-to-End Sales Monitoring System (SellingTracker)",
+    category: "Data Entry / Data Analytic",
+    description: "Mentransformasi pengelolaan data penjualan tradisional berbasis Spreadsheet menjadi sistem monitoring digital yang terintegrasi. Proyek ini berfokus pada efisiensi pelacakan barang Pre-Order (PO) dan transparansi arus kas bisnis",
+    images: [
+    "/porto/data/sellingtracker/1.png",
+    "/porto/data/sellingtracker/2.png",
+    "/porto/data/sellingtracker/3.png",
+    "/porto/data/sellingtracker/4.png",
+    ],
+  },
+
+  {
+    id: 14,
+    title: "Logistic Management System (LMS): Transporter Ecosystem - Guidance",
+    category: "Technical Document",
+    description: "Menyusun dokumentasi teknis dan panduan operasional menyeluruh untuk sistem manajemen logistik terpadu. Proyek ini mencakup standarisasi alur kerja lintas departemen, mulai dari Administrasi & Operasi (manajemen armada dan pengiriman), Kasir & Billing (penagihan vendor), hingga Accounting (rekonsiliasi keuangan). Fokus utama adalah memastikan integrasi data yang akurat untuk penyajian Dashboard Executive yang memantau Accounts Receivable (AR), Revenue, dan Operating Cost secara real-time.",
+    images: [
+      "/porto/doc/logisticms/1.png",
+      "/porto/doc/logisticms/2.png",
+      "/porto/doc/logisticms/3.png",
+      "/porto/doc/logisticms/4.png",
+      "/porto/doc/logisticms/5.png",
+      "/porto/doc/logisticms/6.png"
+    ],
+  },
+
+  {
+    id: 15,
+    title: "Online Assessment System - Guidance",
+    category: "Technical Document",
+    description: "Penulisan panduan teknis untuk sistem ujian digital terpadu. Mencakup dokumentasi modul pembuatan soal, manajemen sesi ujian, hingga fitur analisis hasil asesmen. Fokus pada penyederhanaan instruksi teknis agar platform dapat digunakan secara optimal oleh pengguna dengan berbagai tingkat literasi digital.",
+    images: [
+      "/porto/doc/assesment/1.png",
+      "/porto/doc/assesment/2.png",
+      "/porto/doc/assesment/3.png",
+      "/porto/doc/assesment/4.png",
+      "/porto/doc/assesment/5.png"
+    ],
+  },
+
+  {
+    id: 16,
+    title: "Procurement Integrade Management System - Guidance",
+    category: "Technical Document",
+    description: "Pembuatan panduan teknis untuk sistem pengadaan digital yang mencakup modul Manajemen Vendor, daftar penawar (Bidder List), proses e-lelang, dan penyusunan Owner Estimate. Berhasil menyederhanakan dokumentasi alur kerja pengadaan yang kompleks menjadi panduan instruksional yang sistematis bagi tim internal maupun pihak eksternal.",
+    images: [
+      "/porto/doc/pims/1.png",
+      "/porto/doc/pims/2.png",
+      "/porto/doc/pims/3.png",
+      "/porto/doc/pims/4.png",
+      "/porto/doc/pims/5.png"
+    ],
+  },
+
 
 ];
 
@@ -162,7 +263,7 @@ export default function Portfolio() {
 
       {/* Filter Buttons */}
       <div className="flex justify-center gap-3 mb-12 flex-wrap">
-        {["All", "Data Analytic", "Web Application", "Landing Page", "Technical Document"].map((cat) => (
+        {["All", "Data Entry / Data Analytic", "Web Application", "Landing Page", "Technical Document"].map((cat) => (
           <Button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
